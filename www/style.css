@@ -1,0 +1,889 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
+
+#body1{
+	font-family: 'josefin sans';
+	font-size: 18px;
+}
+/* https://images.unsplash.com/photo-1439902315629-cd882022cea0?fit=crop&fm=jpg&h=975&q=80&w=1925 */
+.hero{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.hero.scrolled{
+	transform: translate3d(0, -100%, 0) scale(.75);
+	opacity: 0;
+}
+.hero-inner{
+		background-image: url('https://images.unsplash.com/photo-1442188950719-e8a67aea613a?fit=crop&fm=jpg&h=975&q=80&w=1925');
+		background-size: cover;
+	background-position: center;
+	display: table;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+}
+.hero-title{
+	display: table-cell;
+	vertical-align: middle;	
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: montserrat;
+}
+.font-2{
+	font-family: 'josefin sans';
+	font-weight: 700;
+}
+.title{ letter-spacing: .3em; text-transform: uppercase; }
+.text-light{ color: #fff }
+.font-alt{
+	font-family: 'georgia';
+	font-style: italic;
+	color: #666;
+}
+.hero{
+	overflow: hidden;
+	z-index: 1;
+}
+.content{
+	position: relative;
+	background-color: #fff;
+	border-top: 10px solid black;
+	padding: 0;	
+	margin: 0;
+	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+	transform: translate3d(0, 20px, 0) scale(.75);
+	opacity: 0;
+}
+.content.scrolled{
+	transform: translate3d(0, 0, 0) scale(1);	
+	opacity: 1;
+}
+.sd{
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.sd:hover, .sd:focus{
+	color: #fff;
+	opacity: .7;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0vw;
+}
+
+#back{
+    z-index: 1;   
+    width: 100vw; 
+    height: 49.5vw;
+    position: absolute;
+}
+#entete{
+    z-index: 2;
+}
+
+#AZERTY{
+    width: 732px;
+    height: 254px;
+    background-color: red;
+    top: 237px;
+    position: absolute;
+    left: 123px;    
+    transform: skewx(10deg) translatex(150px);
+    transform-origin: bottom left;
+    border-width: 1px 6px 6px 1px;
+      
+}
+
+#objetcontact{
+    position: absolute;
+    left: 2vw;
+    top: 45vw;
+    width: 8vw;
+    display: block;
+}
+
+#img1{
+    
+    position: absolute;
+    z-index: 2;
+    width: 3vw;
+    top: -3vw;
+}
+#img2{
+    
+    position: absolute;
+    z-index: 2;
+    width: 3vw;
+    top: 0vw;
+
+}
+
+    
+   
+
+    #div1 {
+       /* position: relative;
+        top:  7.2vw;
+        left: 8.4vw;
+        width: 39vw;
+        height: 300px;
+        padding: 0px;
+        border: 1px solid black;
+        -webkit-perspective: 150px;
+        -webkit-perspective-origin: 10% 10% 20%;
+        perspective: 14vw;
+        perspective-origin: 12% 10% 20%;
+        transform: rotate(-1.5deg);*/
+
+
+        position: relative;
+        top: 8.4vw;
+        left: 6.2vw;
+        width: 39vw;
+        height: 24vw;/*294px;*/
+        padding: 0px;
+        border: 1px solid black;
+        -webkit-perspective: 150px;
+        -webkit-perspective-origin: 10% 10% 20%;
+        perspective: 14vw;
+        perspective-origin: 12% 10% 20%;
+        transform: rotate(-2deg);
+        
+    }
+    
+
+
+    #div2 {
+       /* padding: 2.6vw;
+        position: absolute;
+        border: 1px solid black;
+        background-color: red;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(4deg) rotateX(0deg) rotateZ(0deg);
+        width: 34.1vw;
+        height: 187px;*/
+        background-image: url("img/fond_ecran.jpg");
+
+        padding: 2.6vw;
+        position: absolute;
+        border: 1px solid black;
+        color: white;
+        
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(4deg) rotateX(0deg) rotateZ(0deg);
+        width: 40.3vw;
+        height: 12vw;
+        font-size: 1.2vw;
+
+        
+    }
+    #prenom{
+        z-index: 1;
+        position: absolute;
+        width: 39vw;
+        height: 8vw;
+        left: 8vw;
+        top: -0.3vw;    
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(-44deg) rotateX(55deg) rotateZ(1deg);
+        Cursor: pointer;
+        box-shadow: -8px 5px 6px #645245;
+        display: none;
+
+    }
+    #front-end{
+        z-index: 1;        
+        position: absolute;
+        left: 18vw;
+        top: 6.3vw;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(23deg) rotateX(-35deg) rotateZ(1deg);
+        Cursor: pointer;
+        box-shadow: -8px 5px 6px #645245;
+        width: 18vw;
+        display: none;
+    }
+
+    
+
+    #bouton_on{
+        z-index: 1;
+        position: absolute;
+        left: 49vw;
+        top: 18.7vw;
+        width: 4vw;
+        height: 3vw;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(-45deg) rotateX(3deg) rotateZ(-4deg);
+        Cursor: pointer;
+        border-radius: 100%;
+        box-shadow: -6px 5px 6px #645245;
+        display: none;
+
+    }
+
+    #tel{
+        z-index: 1;
+        position: absolute;
+        left: 20vw;
+        top:22.7vw;
+        width: 7vw;
+        height: 6vw;
+        transform: rotate(-6deg);
+        Cursor:pointer;
+        display: none;
+    }
+
+    #tel :hover{
+        Cursor:pointer;
+    }
+
+    #read_me{
+        z-index: 1;
+        position: absolute;
+        left: 23vw;
+        top: 26.8vw;
+        width: 7vw;
+        height: 4vw;
+        transform: rotate(2deg);
+        Cursor: pointer;
+    
+    
+    }
+    #pc{
+        z-index: 1;
+        position: absolute;
+        left: 29vw;
+        top: 21.8vw;
+        width: 7vw;
+        height: 7vw;
+        transform: rotate(3deg);
+        
+
+    }
+    #cadre_sql2{
+        z-index: 1;
+        position: absolute;
+        left: 11vw;
+        top: 27.8vw;
+        width: 9vw;
+        height: 9vw;
+        transform: rotate(3deg);
+        
+
+    }
+    #coffre_jouets{
+
+        z-index: 1;
+        position: absolute;
+        left: 86vw;
+        top: 22.5vw;
+        width: 6vw;
+        height: 4.5vw;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(3deg) rotateX(6deg) rotateZ(4deg);
+        Cursor: pointer;
+
+    }
+
+    #todo{
+        
+        z-index: 1;
+        position: absolute;
+        left: 77vw;
+        top: 22.5vw;
+        width: 6vw;
+        height: 4.5vw;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(3deg) rotateX(22deg) rotateZ(-15deg);
+        Cursor: pointer;
+    }
+
+    #site_web{
+        
+        z-index: 1;
+        position: absolute;
+        left: 68vw;
+        top: 21.05vw;
+        width: 4vw;
+        height: 4.0vw;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateY(3deg) rotateX(22deg) rotateZ(-15deg);
+        Cursor: pointer;
+        border-radius: 85%;
+        box-shadow: -7px 4px 6px #645245;
+    }
+    #cadre_web:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    #cadre_git{
+        z-index: 1;
+        position: absolute;
+        left: 88vw;
+        top: 0.9vw;
+        width: 6vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(6deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -11px -5px 10px #645245;
+
+
+    }
+    #cadre_git:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        left: 80vw;
+
+    }
+    #cadre_photophiltre{
+        z-index: 1;
+        position: absolute;
+        left: 82vw;
+        top: 0vw;
+        width: 5vw;
+        height: 6.5vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(6deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -11px -5px 10px #645245;
+        
+    }
+    #cadre_photophiltre:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+
+    }
+    #cadre_wordpress{
+        z-index: 1;
+        position: absolute;
+        left: 76vw;
+        top: 0vw;
+        width: 5vw;
+        height: 6.5vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(6deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -11px -5px 10px #645245;
+
+    }
+    #cadre_wordpress:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+
+    }
+    #cadre_linux{
+        z-index: 1;
+        position: absolute;
+        left: 70vw;
+        top: 0vw;
+        width: 5vw;
+        height: 6.5vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(6deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -11px -5px 10px #645245;
+
+    }
+    #cadre_linux:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+
+    }
+
+    #cadre_twig{
+        
+        z-index: 1;
+        position: absolute;
+        left: 88vw;
+        top: 5.9vw;
+        width: 6vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+    }
+    #cadre_twig:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+        left: 80vw;
+
+    }
+
+    #cadre_npm{
+        z-index: 1;
+        position: absolute;
+        left: 81.2vw;
+        top: 5.9vw;
+        width: 6vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+        
+    }
+    #cadre_npm:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    #cadre_nginx{
+        z-index: 1;
+        position: absolute;
+        left: 74.4vw;
+        top: 5.88vw;
+        width: 6vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+    }
+    #cadre_nginx:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    #cadre_ajax{
+        z-index: 1;
+        position: absolute;
+        left: 68.8vw;
+        top: 5.9vw;
+        width: 5vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+
+    }
+    #cadre_ajax:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    #cadre_webpack{
+        z-index: 1;
+        position: absolute;
+        left: 63.5vw;
+        top: 5.9vw;
+        width: 5vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+
+    }
+    #cadre_webpack:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    #cadre_html{
+        z-index: 1;
+        position: absolute;
+        left: 70vw;
+        top: 11.7vw;
+        width: 4.8vw;
+        height: 4.4vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+
+    }
+    
+    #cadre_html:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    
+    #cadre_js{
+        z-index: 1;
+        position: absolute;
+        left: 76vw;
+        top: 11.78vw;
+        width: 5vw;
+        height: 4.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+
+
+    }
+    #cadre_js:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+
+    #cadre_css{
+        z-index: 1;        
+        position: absolute;        
+        left: 82vw;        
+        top: 11.87vw;        
+        width: 5vw;        
+        height: 4.6vw;        
+        -webkit-transform: rotateZ(25deg);        
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);        
+        Cursor: pointer;        
+        box-shadow: -7px 4px 6px #645245;
+
+    }
+    #cadre_css:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+
+    #cadre_php{
+        z-index: 1;
+        position: absolute;
+        left: 88vw;
+        top: 11.2vw;
+        width: 4vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+    
+    }
+    #cadre_php:hover{
+        
+        z-index: 2;
+        width: 14vw;
+        height: 17.6vw;
+        left: 80vw;
+
+    }
+
+    #cadre_node_js{
+        z-index: 1;
+        position: absolute;
+        left: 81vw;
+        top: 16.2vw;
+        width: 6vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+    
+    }
+    #cadre_node_js:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+    #cadre_jquery{
+        z-index: 1;
+        position: absolute;
+        left: 88vw;
+        top: 16.6vw;
+        width: 5vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+    
+    }
+    #cadre_jquery:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+        left: 80vw;
+
+    }
+
+    #cadre_docker{
+
+        z-index: 1;
+        position: absolute;
+        left: 75vw;
+        top: 15.7vw;
+        width: 5vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+    }
+    #cadre_docker:hover{
+        
+        z-index: 2;
+        width: 15vw;
+        height: 14.6vw;
+
+    }
+
+    #cadre_sass{
+        
+        z-index: 1;
+        position: absolute;
+        left: 69.5vw;
+        top: 15.3vw;
+        width: 5vw;
+        height: 5.6vw;
+        -webkit-transform: rotateZ(25deg);
+        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+        Cursor: pointer;
+        box-shadow: -7px 4px 6px #645245;
+            }
+            #cadre_sass:hover{
+                
+                z-index: 2;
+                width: 15vw;
+                height: 14.6vw;
+        
+            }
+            #cadre_bootstrap{
+                
+                z-index: 1;
+                position: absolute;
+                left: 64vw;
+                top: 11.2vw;
+                width: 5vw;
+                height: 4.8vw;
+                -webkit-transform: rotateZ(25deg);
+                transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+                Cursor: pointer;
+                box-shadow: -7px 4px 6px #645245;
+                    }
+                    #cadre_bootstrap:hover{
+                        
+                        z-index: 2;
+                        width: 15vw;
+                        height: 14.6vw;
+                
+                    }
+
+                    #cadre_slim{
+                        
+                        z-index: 1;
+                        position: absolute;
+                        left: 64vw;
+                        top: 15.5vw;
+                        width: 5vw;
+                        height: 4.8vw;
+                        -webkit-transform: rotateZ(25deg);
+                        transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+                        Cursor: pointer;
+                        box-shadow: -7px 4px 6px #645245;
+                            }
+                            #cadre_slim:hover{
+                                
+                                z-index: 2;
+                                width: 15vw;
+                                height: 14.6vw;
+                        
+                            }
+                            #cadre_tableau{
+                                
+                                z-index: 1;
+                                position: absolute;
+                                left: 47vw;
+                                top: -1.5vw;
+                                width: 17vw;
+                                height: 38.8vw;
+                                -webkit-transform: rotateZ(25deg);
+                                transform: rotateY(1deg) rotateX(39.8deg) rotateZ(2deg);
+                                Cursor: pointer;
+                                    }
+
+                                    @font-face {
+                                        font-family: 'Barber Street_PersonalUseOnly';
+                                        src: url('police/TequilaSunset.otf');
+                                       
+                                        
+                                        }
+
+
+                                        #mes_competences{
+                                            position: absolute;
+                                            top: 6vw;
+                                            width: 13vw;
+                                            height: 10vw;
+                                            z-index: 2;
+                                            font-size: 3.5vw;
+                                            left: 49vw;
+                                            transform: rotateY(-3deg) rotateX(11deg) rotateZ(1deg);
+                                            
+                                            font-family: 'Barber Street_PersonalUseOnly';
+                                            font-weight: lighter;
+                                        
+                                        
+                                        }
+                                        #index1{
+                                            position: absolute;
+                                            top: 8vw;
+                                            width: 5vw;
+                                            height: 3vw;
+                                            z-index: 2;
+                                            font-size: 3.5vw;
+                                            left: 7vw;
+                                            transform: rotateY(-3deg) rotateX(-35deg) rotateZ(-9deg);
+                                            /* animation-duration: 5s;
+                                            animation-name: slidei;
+                                            animation-iteration-count:infinite; */
+                                        }
+                                        /* @keyframes slidei {
+                                           0% { transform: rotateY(-3deg) rotateX(-35deg) rotateZ(17deg);
+                                             }
+                                             25% {
+                                            transform: rotateY(-3deg) rotateX(-35deg) rotateZ(-10deg);
+                                            
+                                            }
+                                            50% { 
+                                                transform: rotateY(-3deg) rotateX(-35deg) rotateZ(-37deg);
+                                                
+                                            }
+                                            75% { 
+                                            transform: rotateY(-3deg) rotateX(-35deg) rotateZ(-10deg);
+                                            
+
+                                             }
+                                            100%{ 
+                                            transform: rotateY(-3deg) rotateX(-35deg) rotateZ(17deg);
+                                            
+                                            }
+                                          } */
+
+                                        #mes_projets{
+                                            position: absolute;
+                                            top: 17vw;
+                                            width: 13vw;
+                                            height: 4vw;
+                                            z-index: 2;
+                                            font-size: 2.9vw;
+                                            left: 48.8vw;
+                                            transform: rotateY(-3deg) rotateX(11deg) rotateZ(1deg);
+                                            
+                                            font-family: 'Barber Street_PersonalUseOnly';
+                                            font-weight: lighter;
+                                            border-top: solid;
+                                            line-height: 3vw;
+                                            
+                                        }
+                                        #index2{
+                                            position: absolute;
+                                            top: 3vw;
+                                            width: 4vw;
+                                            height: 2.5vw;
+                                            z-index: 2;
+                                            font-size: 3.5vw;
+                                            left: 9vw;
+                                            transform: rotateY(-3deg) rotateX(-35deg) rotateZ(12deg);
+                                            animation-duration: 5s;
+                                            animation-name: slidein;
+                                            animation-iteration-count:infinite;
+                                        }
+                                        @keyframes slidein {
+                                            0% { left: 9vw;}
+                                            25% { left: 12vw; }
+                                            50% {left: 9vw; }
+                                            75% { left: 12vw; }
+                                            100%{ left: 9vw; }
+                                          }
+
+                                        
+
+
+    
+        
+            
